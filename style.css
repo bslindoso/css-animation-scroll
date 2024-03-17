@@ -16,7 +16,7 @@ body {
   font-size: 16rem;
   background: var(--color-bg-body);
   color: var(--color-p-body);
-  
+
   margin: 50rem;
 }
 
@@ -36,11 +36,45 @@ section {
   min-height: 100vh;
 }
 
-body section:last-of-type {
-
+section img {
+  max-width: 500rem;
+  height: auto;
 }
 
-section img {
-  max-width: 500rem;  
-  height: auto;
+.hidden {
+  opacity: 0;
+  filter: blur(15rem);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.logos {
+  display: flex;
+  gap: 20rem;
+}
+
+.avatar {
+  width: 200rem;
+  background-color: #FFF;
+  border-radius: 10rem;
+  margin: 5rem;
+}
+
+.logos :nth-child(2) {
+  transition-delay: .4s;
+}
+
+.logos :nth-child(3) {
+  transition-delay: .7s;
+}
+
+.logos :nth-child(4) {
+  transition-delay: 1s;
 }

@@ -1,3 +1,15 @@
-const lastSection = document.querySelector('.last-section')
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show')
+    } else {
+      entry.target.classList.remove('show')
+    }
+  })
+})
 
-console.log(lastSection)
+const elements = document.querySelectorAll('.hidden')
+console.log(elements)
+elements.forEach((element) => {
+  myObserver.observe(element)
+})
