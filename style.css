@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: calc(62.5% / 10);
+  --color-bg-body: #111111;
+  --color-p-body: #f0f0f0;
+}
+
+body {
+  font-size: 16rem;
+  background: var(--color-bg-body);
+  color: var(--color-p-body);
+  
+  margin: 50rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 100rem;
+}
+
+p {
+  font-size: 50rem;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body section:last-of-type {
+
+}
+
+section img {
+  max-width: 500rem;  
+  height: auto;
+}
